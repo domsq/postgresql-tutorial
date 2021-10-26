@@ -206,6 +206,17 @@ merc_sl65 = FaveCars(
 #         sep=" | "
 #     )
 
+# Delete all records in a DB
+# cars = session.query(FaveCars)
+# choice = input("Delete ALL records from FaveCars? (y/n) ")
+# if choice.lower() == "y":
+#     for car in cars:
+#         session.delete(car)
+#         session.commit()
+#     print("All records deleted from FaveCars!")
+# else:
+#     print("No records deleted from FaveCars")
+
 # Query the DB to get the car records
 cars = session.query(FaveCars)
 for car in cars:
